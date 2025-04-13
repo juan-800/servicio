@@ -1,0 +1,43 @@
+
+/* Fondo animado */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    animation: fadeInBody 1s ease-in-out;
+}
+
+/* Animación de entrada al formulario */
+.card {
+    animation: slideIn 0.7s ease-out;
+    border-radius: 20px;
+}
+
+/* Transición para el botón */
+button.btn-success {
+    transition: all 0.3s ease;
+}
+
+button.btn-success:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+/* Animaciones clave */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
